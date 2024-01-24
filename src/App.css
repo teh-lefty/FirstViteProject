@@ -22,12 +22,11 @@
 }
 
 .App {
-  display: flexbox;
+  display: flex;
+  gap: 4rem;
 }
 
 .puppyGroup {
-  display: flex;
 }
 .featuredPuppyId {
-  display: flex;
 }

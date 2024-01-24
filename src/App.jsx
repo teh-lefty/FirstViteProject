@@ -13,11 +13,12 @@ function App() {
   return (
     
      <div className="App">
-      {
-        puppies.map((puppy) => {
-          return <div className="puppyGroup"><p className="puppyName" onClick={()=>{setFeatPupId(puppy.id)}} key={puppy.id}>{puppy.name}</p></div>
-        })
-      }
+       <div className="puppyGroup">
+        {puppies.map((puppy) => (
+           <p className="puppyName" onClick={() => {setFeatPupId(puppy.id)}} key={puppy.id}>{puppy.name}</p>
+        ))}
+      
+      </div>
       
         
         { featPupId && (
